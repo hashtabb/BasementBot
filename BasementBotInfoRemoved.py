@@ -154,8 +154,6 @@ async def on_message(message):
 			await message.channel.send(f"{msg.content} is for the boys, justins consent is {justinconsent}")
 		except NameError:
 			await message.channel.send("There is not yet a time for the boys")
-	elif "!whytimefortheboys" in message.content.lower():
-		await message.channel.send("because flirting with an e-girl does not count as human interaction")
 
 	elif "!igottimefortheboys" in message.content.lower():
 		readboyslist = open("theboysfile.txt", "r")
